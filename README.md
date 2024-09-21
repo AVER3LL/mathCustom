@@ -60,7 +60,7 @@ The `Vec` class represents mathematical vectors with arbitrary dimensions.
 ### Usage:
 
 ```python
-from math_module import Vec
+from customMath import Vec
 
 # Create vectors
 v1 = Vec(1, 2, 3)
@@ -81,7 +81,7 @@ print(norm)  # 3.7416573867739413
 
 ## Installation
 
-To use this package, simply clone the repository and run `pip install .` .
+To use this package, simply clone the repository and run `cd customMath && pip install .` .
 
 (Not sure about that yet, just clone the repo and import it normally)
 
