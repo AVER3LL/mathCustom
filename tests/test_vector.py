@@ -1,6 +1,6 @@
 import unittest
 
-from mathCustom.vector import Vec
+from src.mathCustom.vector import Vec
 
 
 class TestVec(unittest.TestCase):

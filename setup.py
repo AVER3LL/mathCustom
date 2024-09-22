@@ -6,6 +6,7 @@ setup(
     description="A package for complex numbers and vectors",
     author="AVER3LL",
     author_email="Sainque@proton.me",
-    packages=find_packages(),  # Automatically find all packages in the project
+    packages=find_packages(where="src"),
+    package_dir={"": "src"},
     install_requires=[],  # External dependencies, if any (e.g., numpy)
 )

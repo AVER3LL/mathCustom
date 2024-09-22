@@ -23,8 +23,8 @@ This module provides two classes for mathematical operations: `Compl` for comple
 
 The module contains two main classes:
 
-- `Compl`: Located in `mathCustom/complexe.py`
-- `Vec`: Located in `mathCustom/vector.py`
+- `Compl`: Located in `src/mathCustom/complexe.py`
+- `Vec`: Located in `src/mathCustom/vector.py`
 
 You can import these classes directly from the `mathCustom` package.
 
@@ -106,8 +106,6 @@ This module has no external dependencies and works with Python 3.6+.
 ## Installation
 
 To use this package, follow these steps:
-
-**Haven't managed to make that work yet**
 
 1. Clone the repository:
 

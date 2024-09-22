@@ -1,7 +1,7 @@
 import unittest
 from math import pi
 
-from mathCustom.complexe import Compl
+from src.mathCustom.complexe import Compl
 
 # TODO: Investigate the impact of the following line.
 # while True:
