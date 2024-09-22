@@ -1,4 +1,5 @@
 from __future__ import annotations
+
 from collections.abc import Iterable
 
 
@@ -22,7 +23,7 @@ class Vec:
         14.0
     """
 
-    def __init__(self, *coord: float | int) -> None:
+    def __init__(self, *coord) -> None:
         """
         Initialize a vector with given coordinates.
 
@@ -473,6 +474,9 @@ def main():
     v2 = Vec(1, 2, 3, 4, 5, 6)
     v4 = Vec(1, 3, 4)
     v3 = Vec(5, 6, 9)
+    v5 = Vec([1, 2, 3])
+
+    print(v5)
 
     # print(v1 + v2)
     print(1 + v2)

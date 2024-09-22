@@ -1,7 +1,25 @@
 import unittest
 from math import pi
 
-from complexe import Compl
+from mathCustom.complexe import Compl
+
+# TODO: Investigate the impact of the following line.
+# while True:
+#     try:
+#         from mathCustom.complexe import Compl
+#
+#         break
+#     except ModuleNotFoundError:
+#         # Running `python tests/test_complexe.py` will fail because
+#         # Python doesn't automatically add the parent directory
+#         # (your project root) to the Python path. This means it can't find the mathCustom package.
+#         # The following line will add the parent directory to the Python path.
+#         import os
+#         import sys
+#
+#         sys.path.insert(
+#             0, os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+#         )
 
 
 class TestComplClass(unittest.TestCase):
@@ -122,8 +140,7 @@ class TestComplClass(unittest.TestCase):
         self.assertNotEqual(c1, c3)
         self.assertEqual(Compl(0, 0), 0)
 
-        with self.assertRaises(TypeError):
-            c1 == 5
+        self.assertEqual(c1 == 5, False)
 
     def test_in_place_operations(self):
         c = Compl(1, 1)

@@ -1,13 +1,37 @@
-# Math Module
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+- [mathCustom Module](#mathcustom-module)
+  - [Module Structure](#module-structure)
+  - [Compl Class](#compl-class)
+    - [Features:](#features)
+    - [Usage:](#usage)
+  - [Vec Class](#vec-class)
+    - [Features:](#features-1)
+    - [Usage:](#usage-1)
+  - [Dependencies](#dependencies)
+  - [Installation](#installation)
+  - [Running Tests](#running-tests)
+  - [Contributing](#contributing)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+# mathCustom Module
 
 This module provides two classes for mathematical operations: `Compl` for complex numbers and `Vec` for vectors.
+
+## Module Structure
+
+The module contains two main classes:
+
+- `Compl`: Located in `mathCustom/complexe.py`
+- `Vec`: Located in `mathCustom/vector.py`
+
+You can import these classes directly from the `mathCustom` package.
 
 ## Compl Class
 
 The `Compl` class represents complex numbers and supports various operations.
-
-I recommend creating `i = Compl(0, 1)` to represent the imaginary unit.
-This will allow you to write complex numbers more naturally in your code.
 
 ### Features:
 
@@ -20,28 +44,25 @@ This will allow you to write complex numbers more naturally in your code.
 ### Usage:
 
 ```python
-from customMath import Compl
+from mathCustom import Compl
 
 # Create complex numbers
 c1 = Compl(3, 4)  # 3 + 4i
 c2 = Compl(1, 1)  # 1 + i
-i = Compl(0, 1)
-c3 = Compl(2 + 3j) # Default python representation
+i = Compl(0, 1)   # Representing the imaginary unit
+c3 = Compl(2 + 3j)  # From Python's built-in complex type
 
-test = 2 + (3 * i)
-print(test) # (2 + 3i)
-
-print(test == c3)  # True
-
-# Perform operations
+# Operations
 result = c1 + c2
+result2 = 1 + (3 * i)
 print(result)  # (4 + 5i)
+print(result2) # (1 + 3i)
 
-# Calculate norm
+# Norm calculation
 norm = c1.norm()
 print(norm)  # 5.0
 
-# Get trigonometric representation
+# Trigonometric representation
 r, theta = c1.trig()
 print(f"r: {r}, theta: {theta}")
 ```
@@ -60,35 +81,75 @@ The `Vec` class represents mathematical vectors with arbitrary dimensions.
 ### Usage:
 
 ```python
-from customMath import Vec
+from mathCustom import Vec
 
 # Create vectors
 v1 = Vec(1, 2, 3)
 v2 = Vec(4, 5, 6)
 
-# Perform operations
+# Vector addition
 result = v1 + v2
 print(result)  # (5, 7, 9)
 
-# Calculate dot product
+# Dot product
 dot_product = v1 * v2
 print(dot_product)  # 32
 
-# Calculate norm
+# Norm calculation
 norm = v1.norm()
 print(norm)  # 3.7416573867739413
 ```
-
-## Installation
-
-To use this package, simply clone the repository and run `cd customMath && pip install .` .
-
-(Not sure about that yet, just clone the repo and import it normally)
 
 ## Dependencies
 
 This module has no external dependencies and works with Python 3.6+.
 
+## Installation
+
+To use this package, follow these steps:
+
+1. Clone the repository:
+
+   ```
+   git clone https://github.com/AVER3LL/mathCustom.git
+   cd mathCustom
+   ```
+
+2. Install the package in editable mode:
+
+   _Make sure you are in the root directory before running this._
+
+   ```
+   pip install -e .
+   ```
+
+## Running Tests
+
+To run the tests for this module:
+
+1. Ensure you are in the root directory of the project.
+2. Run the following command:
+
+   ```
+   python -m unittest discover tests
+   ```
+
+This command will automatically discover and run all test files in the `tests` directory.
+
+To run a specific test file:
+
+```
+python -m unittest tests.test_file_name
+```
+
+Replace `test_file_name` with the name of the test file you want to run (without the `.py` extension).
+
 ## Contributing
 
-Contributions to improve the module are welcome. Please ensure that you add or update tests as necessary.
+Contributions to improve the module are welcome. Please ensure that you:
+
+1. Add or update tests as necessary.
+2. Run the full test suite before submitting changes.
+3. Follow the existing code style (I currently use ruff as my formatter with line length 79)
+
+When submitting changes, make sure all tests pass by running the test suite as described above.
