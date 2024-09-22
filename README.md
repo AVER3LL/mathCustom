@@ -26,7 +26,7 @@ The module contains two main classes:
 - `Compl`: Located in `src/mathCustom/complexe.py`
 - `Vec`: Located in `src/mathCustom/vector.py`
 
-You can import these classes directly from the `mathCustom` package.
+You can import these classes directly from the `mathCustom` module.
 
 ## Compl Class
 
@@ -105,7 +105,7 @@ This module has no external dependencies and works with Python 3.6+.
 
 ## Installation
 
-To use this package, follow these steps:
+To use this module, follow these steps:
 
 1. Clone the repository:
 
@@ -114,7 +114,7 @@ To use this package, follow these steps:
    cd mathCustom
    ```
 
-2. Install the package in editable mode:
+2. Install the module in editable mode:
 
    _Make sure you are in the root directory before running this._
 

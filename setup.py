@@ -3,7 +3,7 @@ from setuptools import find_packages, setup
 setup(
     name="mathCustom",
     version="0.1.0",
-    description="A package for complex numbers and vectors",
+    description="A module for complex numbers and vectors",
     author="AVER3LL",
     author_email="Sainque@proton.me",
     packages=find_packages(where="src"),

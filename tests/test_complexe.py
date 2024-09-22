@@ -12,7 +12,7 @@ from src.mathCustom.complexe import Compl
 #     except ModuleNotFoundError:
 #         # Running `python tests/test_complexe.py` will fail because
 #         # Python doesn't automatically add the parent directory
-#         # (your project root) to the Python path. This means it can't find the mathCustom package.
+#         # (your project root) to the Python path. This means it can't find the mathCustom module.
 #         # The following line will add the parent directory to the Python path.
 #         import os
 #         import sys
