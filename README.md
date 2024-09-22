@@ -1,24 +1,23 @@
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-
-- [mathCustom Module](#mathcustom-module)
-  - [Module Structure](#module-structure)
-  - [Compl Class](#compl-class)
-    - [Features:](#features)
-    - [Usage:](#usage)
-  - [Vec Class](#vec-class)
-    - [Features:](#features-1)
-    - [Usage:](#usage-1)
-  - [Dependencies](#dependencies)
-  - [Installation](#installation)
-  - [Running Tests](#running-tests)
-  - [Contributing](#contributing)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
 # mathCustom Module
 
 This module provides two classes for mathematical operations: `Compl` for complex numbers and `Vec` for vectors.
+
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+- [Module Structure](#module-structure)
+- [Compl Class](#compl-class)
+  - [Features:](#features)
+  - [Usage:](#usage)
+- [Vec Class](#vec-class)
+  - [Features:](#features-1)
+  - [Usage:](#usage-1)
+- [Dependencies](#dependencies)
+- [Installation](#installation)
+- [Running Tests](#running-tests)
+- [Contributing](#contributing)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## Module Structure
 
