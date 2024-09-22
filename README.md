@@ -107,6 +107,8 @@ This module has no external dependencies and works with Python 3.6+.
 
 To use this package, follow these steps:
 
+**Haven't managed to make that work yet**
+
 1. Clone the repository:
 
    ```
