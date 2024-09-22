@@ -9,4 +9,5 @@ setup(
     packages=find_packages(where="src"),
     package_dir={"": "src"},
     install_requires=[],  # External dependencies, if any (e.g., numpy)
+    license="MIT",
 )

@@ -16,6 +16,7 @@ This module provides two classes for mathematical operations: `Compl` for comple
 - [Installation](#installation)
 - [Running Tests](#running-tests)
 - [Contributing](#contributing)
+- [License](#license)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -152,3 +153,7 @@ Contributions to improve the module are welcome. Please ensure that you:
 3. Follow the existing code style (I currently use ruff as my formatter with line length 79)
 
 When submitting changes, make sure all tests pass by running the test suite as described above.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
